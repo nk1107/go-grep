@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #005f73;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Random HTML Page</h1>
+    </div>
+    <div class="container">
+        <h2>Welcome to My Page</h2>
+        <p>This is a simple HTML page with some styling and interactivity.</p>
+        <button onclick="changeText()">Click Me</button>
+        <p id="message"></p>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 My Website</p>
+    </div>
+    <script>
+        function changeText() {
+            document.getElementById("message").innerText = "You clicked the button!";
+        }
+    </script>
+</body>
+</html>
